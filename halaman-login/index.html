@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/be58bda606.js"
+      crossorigin="anonymous"
+    ></script>
+  
+  </head>
+  <body>
+    <div class="container" id="con">
+      <h1>Login</h1>
+
+      <img src="sign.png" alt="profil" />
+
+      <form action="" id="form">
+
+        <div>
+          <input
+            type="text"
+            class="input"
+            id="user-name"
+            placeholder="Username Or Email"
+          />
+        </div>
+
+        <div class="div">
+          <input type="password" id="pass" placeholder="Password" />
+          <i class="fa-regular fa-eye-slash" id="hidden-pass"></i>
+          <i class="fa-regular fa-eye" id="show-pass"></i>
+        </div>
+        
+        <button type="submit" id="submit-form" onclick="validation()">
+          Login
+        </button>
+        <div id="warning"></div>
+      </form>
+    </div>
+
+ 
+
+    <script src="script.js"></script>
+  </body>
+</html>
